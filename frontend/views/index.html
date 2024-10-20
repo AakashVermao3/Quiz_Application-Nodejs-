@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter the User Details</h1>
+        <form id="quizForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name" />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email" />
+
+            <h2>Answer the Questions</h2>
+
+            <div class="question">
+                <p>Question 1: Which of the following is NOT a primitive data type in JavaScript?</p>
+                <div class="options">
+                    <label><input type="radio" name="question1" value="A" /> A) String</label><br>
+                    <label><input type="radio" name="question1" value="B" /> B) Number</label><br>
+                    <label><input type="radio" name="question1" value="C" /> C) Object</label><br>
+                    <label><input type="radio" name="question1" value="D" /> D) Boolean</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 2: Which keyword is used to define a constant in JavaScript?</p>
+                <div class="options">
+                    <label><input type="radio" name="question2" value="A" /> A) const</label><br>
+                    <label><input type="radio" name="question2" value="B" /> B) var</label><br>
+                    <label><input type="radio" name="question2" value="C" /> C) let</label><br>
+                    <label><input type="radio" name="question2" value="D" /> D) constant</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 3: Which SQL clause is used to filter records?</p>
+                <div class="options">
+                    <label><input type="radio" name="question3" value="A" /> A) WHERE</label><br>
+                    <label><input type="radio" name="question3" value="B" /> B) FILTER</label><br>
+                    <label><input type="radio" name="question3" value="C" /> C) HAVING</label><br>
+                    <label><input type="radio" name="question3" value="D" /> D) ORDER BY</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 4: What does the JOIN clause do in SQL?</p>
+                <div class="options">
+                    <label><input type="radio" name="question4" value="A" /> A) Combines rows from two or more tables based on a related column</label><br>
+                    <label><input type="radio" name="question4" value="B" /> B) Deletes rows from a table</label><br>
+                    <label><input type="radio" name="question4" value="C" /> C) Creates a new table</label><br>
+                    <label><input type="radio" name="question4" value="D" /> D) Sorts the results of a query</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Question 5: Which SQL statement is used to retrieve data from a database?</p>
+                <div class="options">
+                    <label><input type="radio" name="question5" value="A" /> A) GET</label><br>
+                    <label><input type="radio" name="question5" value="B" /> B) SELECT</label><br>
+                    <label><input type="radio" name="question5" value="C" /> C) FETCH</label><br>
+                    <label><input type="radio" name="question5" value="D" /> D) EXTRACT</label>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
